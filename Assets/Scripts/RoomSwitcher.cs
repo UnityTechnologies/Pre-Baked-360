@@ -38,7 +38,8 @@ public class RoomSwitcher : MonoBehaviour {
         string roomName;
         string maskName;
 
-        LiveCamName = CSCamera.LiveChildOrSelf.Name.Substring(0,1);
+        //LiveCamName = CSCamera.LiveChildOrSelf.Name.Substring(0,1);
+        LiveCamName = CSCamera.LiveChild.Name.Substring(0, 1);
         LiveCamID = int.Parse(LiveCamName);
 
         //Debug.Log(LiveCamID);
